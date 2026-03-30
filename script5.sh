@@ -1,25 +1,25 @@
 #!/bin/bash
 # Script 5: Open Source Manifesto Generator
-# Author: Pranj
+# Author: Sarva Shresth Saini
 
-echo "Answer three questions to generate your manifesto."
+echo "Answer the following questions:"
 echo ""
 
-read -p "1. Name one open-source tool you use every day: " TOOL
-read -p "2. In one word, what does 'freedom' mean to you? " FREEDOM
-read -p "3. Name one thing you would build and share freely: " BUILD
+read -p "1. Tool you use daily: " TOOL
+read -p "2. Meaning of freedom (one word): " FREEDOM
+read -p "3. What would you build: " BUILD
 
-DATE=$(date '+%d %B %Y')
-OUTPUT="manifesto_$(whoami).txt"
+DATE=$(date)
+OUTPUT="manifesto.txt"
 
-echo "----------------------------------------" > $OUTPUT
-echo "Open Source Manifesto - $DATE" >> $OUTPUT
-echo "----------------------------------------" >> $OUTPUT
-echo "I use $TOOL every day, and it represents the idea of $FREEDOM." >> $OUTPUT
-echo "I believe knowledge should be shared freely." >> $OUTPUT
-echo "One thing I would build and share is $BUILD." >> $OUTPUT
-echo "Open source is not just code — it is a philosophy of collaboration." >> $OUTPUT
+echo "--------------------------------------" > $OUTPUT
+echo "Open Source Manifesto" >> $OUTPUT
+echo "Date: $DATE" >> $OUTPUT
+echo "" >> $OUTPUT
+echo "I believe open source is about $FREEDOM." >> $OUTPUT
+echo "Using tools like $TOOL, I aim to contribute to the community." >> $OUTPUT
+echo "One day, I will build $BUILD and share it freely." >> $OUTPUT
+echo "--------------------------------------" >> $OUTPUT
 
-echo ""
-echo "Manifesto saved to $OUTPUT"
+echo "Manifesto saved in $OUTPUT ✅"
 cat $OUTPUT
