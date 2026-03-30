@@ -1,24 +1,36 @@
 #!/bin/bash
 # Script 2: FOSS Package Inspector
-# Author: Pranj
+# Author: Sarva Shresth Saini
 
 PACKAGE="git"
 
-# Check if installed
-if dpkg -l | grep -q "$PACKAGE"; then
-    echo "$PACKAGE is installed."
+echo "======================================"
+echo " Package Inspection Report"
+echo "======================================"
 
-    # Show details
-    dpkg -s $PACKAGE | grep -E 'Version|Maintainer|Description'
+if dpkg -l | grep -qw $PACKAGE; then
+    echo "$PACKAGE is installed ✅"
+    echo "Version:"
+    git --version
 else
-    echo "$PACKAGE is NOT installed."
+    echo "$PACKAGE is NOT installed ❌"
 fi
 
-# Case statement (philosophy line)
+echo "--------------------------------------"
+
 case $PACKAGE in
-    git) echo "Git: born from frustration, built for freedom in version control." ;;
-    apache2) echo "Apache: backbone of the open web." ;;
-    mysql) echo "MySQL: open source driving databases worldwide." ;;
-    firefox) echo "Firefox: fighting for an open and private web." ;;
-    *) echo "Unknown package" ;;
+ git)
+  echo "Git: A distributed version control system for tracking code changes."
+  ;;
+ python)
+  echo "Python: A popular open-source programming language."
+  ;;
+ apache2)
+  echo "Apache: A widely used web server."
+  ;;
+ *)
+  echo "No description available."
+  ;;
 esac
+
+echo "======================================"
