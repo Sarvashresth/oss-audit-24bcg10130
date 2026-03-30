@@ -1,0 +1,7 @@
+----------------------------------------
+Open Source Manifesto - 30 March 2026
+----------------------------------------
+I use GIT every day, and it represents the idea of Free.
+I believe knowledge should be shared freely.
+One thing I would build and share is Applet.
+Open source is not just code — it is a philosophy of collaboration.
