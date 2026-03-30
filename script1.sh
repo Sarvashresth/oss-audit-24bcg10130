@@ -1,28 +1,32 @@
+
+---
+
+# 🟢 ✅ SCRIPT 1 (FINAL)
+
+```bash
 #!/bin/bash
 # Script 1: System Identity Report
-# Author: Pranj | Course: Open Source Software
+# Author: Sarva Shresth Saini
 
-# Variables
-STUDENT_NAME="Pranj"
-SOFTWARE_CHOICE="Git"
+STUDENT_NAME="Sarva Shresth Saini"
+SOFTWARE="Git"
 
-# System Info
 KERNEL=$(uname -r)
-USER_NAME=$(whoami)
+USER=$(whoami)
+HOME_DIR=$HOME
 UPTIME=$(uptime -p)
 DATE=$(date)
 DISTRO=$(lsb_release -d | cut -f2)
 
-# Output
 echo "======================================"
 echo " Open Source Audit — $STUDENT_NAME"
 echo "======================================"
-echo "Software Chosen : $SOFTWARE_CHOICE"
+echo "Software        : $SOFTWARE"
 echo "Kernel Version  : $KERNEL"
-echo "User            : $USER_NAME"
+echo "User            : $USER"
+echo "Home Directory  : $HOME_DIR"
 echo "Uptime          : $UPTIME"
 echo "Date & Time     : $DATE"
-echo "Distro          : $DISTRO"
-echo "License         : GPL (Linux Kernel License)"
+echo "OS              : $DISTRO"
+echo "License         : GNU General Public License (GPL)"
 echo "======================================"
-
