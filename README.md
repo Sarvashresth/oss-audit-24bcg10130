@@ -1,43 +1,53 @@
-# Open Source Audit Project
+# 📘 Open Source Audit Project
 
-## Student Details
-Name: Pranjali Sharma
-Roll Number: 24BAI10156
+This repository contains my submission for the Open Source Software Capstone Project.  
+The project focuses on analyzing Git and implementing shell scripts to demonstrate Linux and automation skills.
 
-## Chosen Software
-Git
+---
 
-## Scripts Overview
+## 👤 Student Details
 
-### Script 1: System Identity Report
-Displays system details like kernel version, user, uptime, and OS information.
+- Name: Sarva Shresth Saini  
+- Registration Number: 24BCG10130  
+- Course: Open Source Software  
 
-### Script 2: FOSS Package Inspector
-Checks if Git is installed and displays package details.
+---
 
-### Script 3: Disk and Permission Auditor
-Analyzes important system directories for size and permissions.
+## 🖥️ Chosen Software
 
-### Script 4: Log File Analyzer
-Counts occurrences of keywords in log files.
+Git Version Control System  
 
-### Script 5: Open Source Manifesto Generator
-Generates a personalized open-source philosophy statement.
+Git is a distributed version control system created by Linus Torvalds. It helps developers track changes, collaborate efficiently, and manage code versions.
 
-## How to Run Scripts
+---
+
+## 📜 Shell Scripts Overview
+
+### Script 1: System Identity Report  
+Displays system information such as kernel version, user details, uptime, and OS information.
+
+### Script 2: FOSS Package Inspector  
+Checks whether Git is installed and displays its version and details.
+
+### Script 3: Disk and Permission Auditor  
+Analyzes system directories and shows permissions, ownership, and storage usage.
+
+### Script 4: Log File Analyzer  
+Reads log files, searches for keywords, and counts occurrences.
+
+### Script 5: Open Source Manifesto Generator  
+Generates a personalized open-source philosophy statement based on user input.
+
+---
+
+## ⚙️ How to Run
 
 ```bash
-chmod +x script1.sh
+git clone https://github.com/Sarvashresth/oss-audit-24bcg10130.git
+cd oss-audit-24bcg10130
+chmod +x *.sh
 ./script1.sh
-
-chmod +x script2.sh
 ./script2.sh
-
-chmod +x script3.sh
 ./script3.sh
-
-chmod +x script4.sh
-./script4.sh /var/log/syslog
-
-chmod +x script5.sh
+./script4.sh /var/log/syslog error
 ./script5.sh
